@@ -1,4 +1,10 @@
 {
+  "name": "hardhat",
+  "scripts": {
+    "start:local": "./node_modules/.bin/hardhat node",
+    "deploy:local": "./node_modules/.bin/hardhat --network localhost run scripts/deploy.js",
+    "test:local": "./node_modules/.bin/hardhat test"
+  },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.4",
     "@nomiclabs/hardhat-waffle": "^2.0.2",
